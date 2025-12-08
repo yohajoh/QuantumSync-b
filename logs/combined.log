@@ -1,0 +1,126 @@
+{"level":"info","message":"Server running on port 5000","service":"video-conference","timestamp":"2025-12-08 07:26:58"}
+{"level":"info","message":"Socket.IO server initialized","service":"video-conference","timestamp":"2025-12-08 07:26:58"}
+{"level":"info","message":"Server running on port 5000","service":"video-conference","timestamp":"2025-12-08 07:28:23"}
+{"level":"info","message":"Socket.IO server initialized","service":"video-conference","timestamp":"2025-12-08 07:28:23"}
+{"level":"info","message":"Server running on port 5000","service":"video-conference","timestamp":"2025-12-08 07:28:42"}
+{"level":"info","message":"Socket.IO server initialized","service":"video-conference","timestamp":"2025-12-08 07:28:42"}
+{"level":"info","message":"Server running on port 5000","service":"video-conference","timestamp":"2025-12-08 07:28:53"}
+{"level":"info","message":"Socket.IO server initialized","service":"video-conference","timestamp":"2025-12-08 07:28:53"}
+{"level":"info","message":"New connection: RYW1btj7QOCho3cQAAAC","service":"video-conference","timestamp":"2025-12-08 08:08:40"}
+{"level":"info","message":"User disconnected: RYW1btj7QOCho3cQAAAC","service":"video-conference","timestamp":"2025-12-08 08:20:29"}
+{"level":"info","message":"New connection: lcNkWk1hBX9hh6mZAAAG","service":"video-conference","timestamp":"2025-12-08 08:27:19"}
+{"level":"info","message":"Room created: 12345678","service":"video-conference","timestamp":"2025-12-08 08:28:22"}
+{"level":"info","message":"User 7ulwvopwo joined room 12345678","service":"video-conference","timestamp":"2025-12-08 08:28:22"}
+{"level":"info","message":"User yohannes (7ulwvopwo) joined room 12345678","service":"video-conference","timestamp":"2025-12-08 08:28:22"}
+{"level":"info","message":"User disconnected: lcNkWk1hBX9hh6mZAAAG","service":"video-conference","timestamp":"2025-12-08 08:29:23"}
+{"level":"info","message":"New connection: xMwjM0Au1b8CEMPvAAAK","service":"video-conference","timestamp":"2025-12-08 08:30:12"}
+{"level":"info","message":"Room created: 7215b0bf","service":"video-conference","timestamp":"2025-12-08 08:30:29"}
+{"level":"info","message":"User peo3hr3mr joined room 7215b0bf","service":"video-conference","timestamp":"2025-12-08 08:30:29"}
+{"level":"info","message":"User yohannes (peo3hr3mr) joined room 7215b0bf","service":"video-conference","timestamp":"2025-12-08 08:30:29"}
+{"level":"info","message":"Room 7215b0bf deleted (empty)","service":"video-conference","timestamp":"2025-12-08 08:30:29"}
+{"level":"info","message":"User peo3hr3mr left room 7215b0bf","service":"video-conference","timestamp":"2025-12-08 08:30:29"}
+{"level":"info","message":"User peo3hr3mr left room 7215b0bf","service":"video-conference","timestamp":"2025-12-08 08:30:29"}
+{"level":"info","message":"Room created: 7215b0bf","service":"video-conference","timestamp":"2025-12-08 08:30:29"}
+{"level":"info","message":"User peo3hr3mr joined room 7215b0bf","service":"video-conference","timestamp":"2025-12-08 08:30:29"}
+{"level":"info","message":"User yohannes (peo3hr3mr) joined room 7215b0bf","service":"video-conference","timestamp":"2025-12-08 08:30:29"}
+{"level":"info","message":"Room 7215b0bf deleted (empty)","service":"video-conference","timestamp":"2025-12-08 08:32:21"}
+{"level":"info","message":"User peo3hr3mr left room 7215b0bf","service":"video-conference","timestamp":"2025-12-08 08:32:21"}
+{"level":"info","message":"User peo3hr3mr left room 7215b0bf","service":"video-conference","timestamp":"2025-12-08 08:32:21"}
+{"level":"info","message":"Room created: 7215b0bf","service":"video-conference","timestamp":"2025-12-08 08:32:21"}
+{"level":"info","message":"User peo3hr3mr joined room 7215b0bf","service":"video-conference","timestamp":"2025-12-08 08:32:21"}
+{"level":"info","message":"User yohannes (peo3hr3mr) joined room 7215b0bf","service":"video-conference","timestamp":"2025-12-08 08:32:21"}
+{"level":"info","message":"Room 7215b0bf deleted (empty)","service":"video-conference","timestamp":"2025-12-08 08:33:00"}
+{"level":"info","message":"User peo3hr3mr left room 7215b0bf","service":"video-conference","timestamp":"2025-12-08 08:33:00"}
+{"level":"info","message":"User peo3hr3mr left room 7215b0bf","service":"video-conference","timestamp":"2025-12-08 08:33:00"}
+{"level":"info","message":"Room created: 7215b0bf","service":"video-conference","timestamp":"2025-12-08 08:33:00"}
+{"level":"info","message":"User peo3hr3mr joined room 7215b0bf","service":"video-conference","timestamp":"2025-12-08 08:33:00"}
+{"level":"info","message":"User yohannes (peo3hr3mr) joined room 7215b0bf","service":"video-conference","timestamp":"2025-12-08 08:33:00"}
+{"level":"info","message":"Room 7215b0bf deleted (empty)","service":"video-conference","timestamp":"2025-12-08 08:33:37"}
+{"level":"info","message":"User peo3hr3mr left room 7215b0bf","service":"video-conference","timestamp":"2025-12-08 08:33:37"}
+{"level":"info","message":"User peo3hr3mr left room 7215b0bf","service":"video-conference","timestamp":"2025-12-08 08:33:38"}
+{"level":"info","message":"Room created: 7215b0bf","service":"video-conference","timestamp":"2025-12-08 08:33:38"}
+{"level":"info","message":"User peo3hr3mr joined room 7215b0bf","service":"video-conference","timestamp":"2025-12-08 08:33:38"}
+{"level":"info","message":"User yohannes (peo3hr3mr) joined room 7215b0bf","service":"video-conference","timestamp":"2025-12-08 08:33:38"}
+{"level":"info","message":"Room 7215b0bf deleted (empty)","service":"video-conference","timestamp":"2025-12-08 08:33:53"}
+{"level":"info","message":"User peo3hr3mr left room 7215b0bf","service":"video-conference","timestamp":"2025-12-08 08:33:53"}
+{"level":"info","message":"User peo3hr3mr left room 7215b0bf","service":"video-conference","timestamp":"2025-12-08 08:33:53"}
+{"level":"info","message":"User disconnected: xMwjM0Au1b8CEMPvAAAK","service":"video-conference","timestamp":"2025-12-08 08:34:27"}
+{"level":"info","message":"Server running on port 5000","service":"video-conference","timestamp":"2025-12-08 08:35:08"}
+{"level":"info","message":"Socket.IO server initialized","service":"video-conference","timestamp":"2025-12-08 08:35:08"}
+{"level":"info","message":"New connection: Kysm-MlFNyFa_fLpAAAC","service":"video-conference","timestamp":"2025-12-08 12:40:32"}
+{"level":"info","message":"Server running on port 5000","service":"video-conference","timestamp":"2025-12-08 12:43:44"}
+{"level":"info","message":"Socket.IO server initialized","service":"video-conference","timestamp":"2025-12-08 12:43:44"}
+{"level":"info","message":"New connection: qDm5KVUEN56vLsVYAAAC","service":"video-conference","timestamp":"2025-12-08 12:47:43"}
+{"level":"info","message":"Room created: 12345678","service":"video-conference","timestamp":"2025-12-08 12:53:37"}
+{"level":"info","message":"User i4oihdqme joined room 12345678","service":"video-conference","timestamp":"2025-12-08 12:53:37"}
+{"level":"info","message":"User yohannes (i4oihdqme) joined room 12345678","service":"video-conference","timestamp":"2025-12-08 12:53:37"}
+{"level":"info","message":"Room 12345678 deleted (empty)","service":"video-conference","timestamp":"2025-12-08 12:53:37"}
+{"level":"info","message":"User i4oihdqme left room 12345678","service":"video-conference","timestamp":"2025-12-08 12:53:37"}
+{"level":"info","message":"User i4oihdqme left room 12345678","service":"video-conference","timestamp":"2025-12-08 12:53:37"}
+{"level":"info","message":"Room created: 12345678","service":"video-conference","timestamp":"2025-12-08 12:53:37"}
+{"level":"info","message":"User i4oihdqme joined room 12345678","service":"video-conference","timestamp":"2025-12-08 12:53:37"}
+{"level":"info","message":"User yohannes (i4oihdqme) joined room 12345678","service":"video-conference","timestamp":"2025-12-08 12:53:37"}
+{"level":"info","message":"User disconnected: qDm5KVUEN56vLsVYAAAC","service":"video-conference","timestamp":"2025-12-08 12:53:41"}
+{"level":"info","message":"New connection: cF0lgAqkAnu4yltUAAAG","service":"video-conference","timestamp":"2025-12-08 12:54:07"}
+{"level":"info","message":"User zswdnb7s4 joined room 12345678","service":"video-conference","timestamp":"2025-12-08 12:54:08"}
+{"level":"info","message":"User yohannes (zswdnb7s4) joined room 12345678","service":"video-conference","timestamp":"2025-12-08 12:54:08"}
+{"level":"info","message":"User disconnected: cF0lgAqkAnu4yltUAAAG","service":"video-conference","timestamp":"2025-12-08 12:54:27"}
+{"level":"info","message":"New connection: 1-y8oSeeza08MbYYAAAK","service":"video-conference","timestamp":"2025-12-08 12:54:40"}
+{"level":"info","message":"User oluvwbuww joined room 12345678","service":"video-conference","timestamp":"2025-12-08 12:54:41"}
+{"level":"info","message":"User yohannes (oluvwbuww) joined room 12345678","service":"video-conference","timestamp":"2025-12-08 12:54:41"}
+{"level":"info","message":"User oluvwbuww left room 12345678","service":"video-conference","timestamp":"2025-12-08 12:54:54"}
+{"level":"info","message":"User oluvwbuww left room 12345678","service":"video-conference","timestamp":"2025-12-08 12:54:54"}
+{"level":"info","message":"User disconnected: 1-y8oSeeza08MbYYAAAK","service":"video-conference","timestamp":"2025-12-08 12:54:57"}
+{"level":"info","message":"New connection: 48A3vUtT5HnmFDX4AAAO","service":"video-conference","timestamp":"2025-12-08 12:54:58"}
+{"level":"info","message":"User disconnected: 48A3vUtT5HnmFDX4AAAO","service":"video-conference","timestamp":"2025-12-08 13:00:00"}
+{"level":"info","message":"New connection: EZPhyMewWH-wB6oQAAAS","service":"video-conference","timestamp":"2025-12-08 13:02:40"}
+{"level":"info","message":"User 5iir2q00v joined room 12345678","service":"video-conference","timestamp":"2025-12-08 13:03:28"}
+{"level":"info","message":"User yohannes (5iir2q00v) joined room 12345678","service":"video-conference","timestamp":"2025-12-08 13:03:28"}
+{"level":"info","message":"User 5iir2q00v left room 12345678","service":"video-conference","timestamp":"2025-12-08 13:03:28"}
+{"level":"info","message":"User 5iir2q00v left room 12345678","service":"video-conference","timestamp":"2025-12-08 13:03:28"}
+{"level":"info","message":"User 5iir2q00v joined room 12345678","service":"video-conference","timestamp":"2025-12-08 13:03:29"}
+{"level":"info","message":"User yohannes (5iir2q00v) joined room 12345678","service":"video-conference","timestamp":"2025-12-08 13:03:29"}
+{"level":"info","message":"User disconnected: EZPhyMewWH-wB6oQAAAS","service":"video-conference","timestamp":"2025-12-08 13:04:15"}
+{"level":"info","message":"New connection: BMS6_2xdLfKEeM98AAAW","service":"video-conference","timestamp":"2025-12-08 13:06:29"}
+{"level":"info","message":"User 49ngoojo5 joined room 12345678","service":"video-conference","timestamp":"2025-12-08 13:06:51"}
+{"level":"info","message":"User john (49ngoojo5) joined room 12345678","service":"video-conference","timestamp":"2025-12-08 13:06:51"}
+{"level":"info","message":"User 49ngoojo5 left room 12345678","service":"video-conference","timestamp":"2025-12-08 13:06:51"}
+{"level":"info","message":"User 49ngoojo5 left room 12345678","service":"video-conference","timestamp":"2025-12-08 13:06:51"}
+{"level":"info","message":"User 49ngoojo5 joined room 12345678","service":"video-conference","timestamp":"2025-12-08 13:06:51"}
+{"level":"info","message":"User john (49ngoojo5) joined room 12345678","service":"video-conference","timestamp":"2025-12-08 13:06:51"}
+{"level":"info","message":"User disconnected: BMS6_2xdLfKEeM98AAAW","service":"video-conference","timestamp":"2025-12-08 13:07:29"}
+{"level":"info","message":"Server running on port 5000","service":"video-conference","timestamp":"2025-12-08 13:07:51"}
+{"level":"info","message":"Socket.IO server initialized","service":"video-conference","timestamp":"2025-12-08 13:07:51"}
+{"level":"info","message":"New connection: DKnhVBLQTjq2FJkVAAAC","service":"video-conference","timestamp":"2025-12-08 13:08:15"}
+{"level":"info","message":"Room created: 12345678","service":"video-conference","timestamp":"2025-12-08 13:08:23"}
+{"level":"info","message":"User ih2qkj1pf joined room 12345678","service":"video-conference","timestamp":"2025-12-08 13:08:23"}
+{"level":"info","message":"User j (ih2qkj1pf) joined room 12345678","service":"video-conference","timestamp":"2025-12-08 13:08:23"}
+{"level":"info","message":"Room 12345678 deleted (empty)","service":"video-conference","timestamp":"2025-12-08 13:08:23"}
+{"level":"info","message":"User ih2qkj1pf left room 12345678","service":"video-conference","timestamp":"2025-12-08 13:08:23"}
+{"level":"info","message":"User ih2qkj1pf left room 12345678","service":"video-conference","timestamp":"2025-12-08 13:08:23"}
+{"level":"info","message":"Room created: 12345678","service":"video-conference","timestamp":"2025-12-08 13:08:23"}
+{"level":"info","message":"User ih2qkj1pf joined room 12345678","service":"video-conference","timestamp":"2025-12-08 13:08:23"}
+{"level":"info","message":"User j (ih2qkj1pf) joined room 12345678","service":"video-conference","timestamp":"2025-12-08 13:08:23"}
+{"level":"info","message":"Room 12345678 deleted (empty)","service":"video-conference","timestamp":"2025-12-08 13:10:27"}
+{"level":"info","message":"User ih2qkj1pf left room 12345678","service":"video-conference","timestamp":"2025-12-08 13:10:27"}
+{"level":"info","message":"User ih2qkj1pf left room 12345678","service":"video-conference","timestamp":"2025-12-08 13:10:27"}
+{"level":"info","message":"User disconnected: DKnhVBLQTjq2FJkVAAAC","service":"video-conference","timestamp":"2025-12-08 13:11:14"}
+{"level":"info","message":"New connection: DIZQaKldSw-iY3MFAAAG","service":"video-conference","timestamp":"2025-12-08 13:12:02"}
+{"level":"info","message":"Room created: 12345678","service":"video-conference","timestamp":"2025-12-08 13:12:14"}
+{"level":"info","message":"User tj3gvg9b0 joined room 12345678","service":"video-conference","timestamp":"2025-12-08 13:12:14"}
+{"level":"info","message":"User yohannes (tj3gvg9b0) joined room 12345678","service":"video-conference","timestamp":"2025-12-08 13:12:14"}
+{"level":"info","message":"Room 12345678 deleted (empty)","service":"video-conference","timestamp":"2025-12-08 13:12:14"}
+{"level":"info","message":"User tj3gvg9b0 left room 12345678","service":"video-conference","timestamp":"2025-12-08 13:12:14"}
+{"level":"info","message":"User tj3gvg9b0 left room 12345678","service":"video-conference","timestamp":"2025-12-08 13:12:14"}
+{"level":"info","message":"Room created: 12345678","service":"video-conference","timestamp":"2025-12-08 13:12:14"}
+{"level":"info","message":"User tj3gvg9b0 joined room 12345678","service":"video-conference","timestamp":"2025-12-08 13:12:14"}
+{"level":"info","message":"User yohannes (tj3gvg9b0) joined room 12345678","service":"video-conference","timestamp":"2025-12-08 13:12:14"}
+{"level":"info","message":"New connection: iTUvFIbBcIxEoKSXAAAK","service":"video-conference","timestamp":"2025-12-08 13:12:33"}
+{"level":"info","message":"User vseda4ig1 joined room 12345678","service":"video-conference","timestamp":"2025-12-08 13:12:52"}
+{"level":"info","message":"User john (vseda4ig1) joined room 12345678","service":"video-conference","timestamp":"2025-12-08 13:12:52"}
+{"level":"info","message":"User vseda4ig1 left room 12345678","service":"video-conference","timestamp":"2025-12-08 13:12:52"}
+{"level":"info","message":"User vseda4ig1 left room 12345678","service":"video-conference","timestamp":"2025-12-08 13:12:52"}
+{"level":"info","message":"User vseda4ig1 joined room 12345678","service":"video-conference","timestamp":"2025-12-08 13:12:52"}
+{"level":"info","message":"User john (vseda4ig1) joined room 12345678","service":"video-conference","timestamp":"2025-12-08 13:12:52"}
+{"level":"info","message":"User disconnected: iTUvFIbBcIxEoKSXAAAK","service":"video-conference","timestamp":"2025-12-08 13:13:44"}
+{"level":"info","message":"User disconnected: DIZQaKldSw-iY3MFAAAG","service":"video-conference","timestamp":"2025-12-08 13:15:31"}
