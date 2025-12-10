@@ -1,19 +1,16 @@
 import express from "express";
-import http from "http";
+import { createServer } from "http";
 import { Server } from "socket.io";
 import cors from "cors";
 import helmet from "helmet";
 import dotenv from "dotenv";
-import { createServer } from "http";
-import { v4 as uuidv4 } from "uuid";
-import rateLimit from "express-rate-limit";
 
 dotenv.config();
 
 const app = express();
 const server = createServer(app);
 
-// Security middleware
+// Middleware
 app.use(helmet());
 app.use(
   cors({
@@ -22,13 +19,6 @@ app.use(
   })
 );
 app.use(express.json());
-
-// Rate limiting
-const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000,
-  max: 100,
-});
-app.use(limiter);
 
 // Socket.IO setup
 const io = new Server(server, {
@@ -40,9 +30,9 @@ const io = new Server(server, {
   transports: ["websocket", "polling"],
 });
 
-// Simple room management
+// Room management
 const rooms = new Map();
-const socketToUser = new Map();
+const userSocketMap = new Map(); // userId -> socketId
 
 io.on("connection", (socket) => {
   console.log(`✅ New connection: ${socket.id}`);
@@ -55,7 +45,7 @@ io.on("connection", (socket) => {
       // Create room if it doesn't exist
       if (!rooms.has(roomId)) {
         rooms.set(roomId, new Map());
-        console.log(`🏠 Created new room: ${roomId}`);
+        console.log(`🏠 Created room: ${roomId}`);
       }
 
       const room = rooms.get(roomId);
@@ -74,8 +64,8 @@ io.on("connection", (socket) => {
         joinedAt: Date.now(),
       });
 
-      // Map socket to user
-      socketToUser.set(socket.id, { userId, roomId });
+      // Map userId to socketId
+      userSocketMap.set(userId, socket.id);
 
       // Join socket room
       socket.join(roomId);
@@ -89,7 +79,7 @@ io.on("connection", (socket) => {
           socketId: user.socketId,
         }));
 
-      console.log(`📊 Room ${roomId} now has ${room.size} participants`);
+      console.log(`📊 Room ${roomId} has ${room.size} participants`);
 
       // Send room joined event to the new user
       socket.emit("room-joined", {
@@ -111,19 +101,12 @@ io.on("connection", (socket) => {
     }
   });
 
-  // WebRTC signaling - SIMPLIFIED
+  // WebRTC signaling
   socket.on("offer", ({ offer, to, from }) => {
     console.log(`📨 Offer from ${from} to ${to}`);
 
-    // Find target user's socket ID
-    let targetSocketId = null;
-    for (const [roomId, room] of rooms.entries()) {
-      const user = room.get(to);
-      if (user) {
-        targetSocketId = user.socketId;
-        break;
-      }
-    }
+    // Get target socket ID
+    const targetSocketId = userSocketMap.get(to);
 
     if (targetSocketId) {
       console.log(`📤 Forwarding offer to ${to} (socket: ${targetSocketId})`);
@@ -136,15 +119,7 @@ io.on("connection", (socket) => {
   socket.on("answer", ({ answer, to, from }) => {
     console.log(`📨 Answer from ${from} to ${to}`);
 
-    // Find target user's socket ID
-    let targetSocketId = null;
-    for (const [roomId, room] of rooms.entries()) {
-      const user = room.get(to);
-      if (user) {
-        targetSocketId = user.socketId;
-        break;
-      }
-    }
+    const targetSocketId = userSocketMap.get(to);
 
     if (targetSocketId) {
       console.log(`📤 Forwarding answer to ${to} (socket: ${targetSocketId})`);
@@ -157,15 +132,7 @@ io.on("connection", (socket) => {
   socket.on("ice-candidate", ({ candidate, to, from }) => {
     console.log(`🧊 ICE candidate from ${from} to ${to}`);
 
-    // Find target user's socket ID
-    let targetSocketId = null;
-    for (const [roomId, room] of rooms.entries()) {
-      const user = room.get(to);
-      if (user) {
-        targetSocketId = user.socketId;
-        break;
-      }
-    }
+    const targetSocketId = userSocketMap.get(to);
 
     if (targetSocketId) {
       socket.to(targetSocketId).emit("ice-candidate", { candidate, from });
@@ -202,8 +169,8 @@ io.on("connection", (socket) => {
       }
     }
 
+    userSocketMap.delete(userId);
     socket.leave(roomId);
-    socketToUser.delete(socket.id);
     socket.to(roomId).emit("user-left", { userId });
   });
 
@@ -211,28 +178,24 @@ io.on("connection", (socket) => {
   socket.on("disconnect", () => {
     console.log(`🔌 User disconnected: ${socket.id}`);
 
-    const user = socketToUser.get(socket.id);
-    if (user) {
-      const { userId, roomId } = user;
+    // Find and remove user from rooms
+    for (const [roomId, room] of rooms.entries()) {
+      for (const [userId, user] of room.entries()) {
+        if (user.socketId === socket.id) {
+          room.delete(userId);
+          userSocketMap.delete(userId);
 
-      const room = rooms.get(roomId);
-      if (room) {
-        room.delete(userId);
-        if (room.size === 0) {
-          rooms.delete(roomId);
-          console.log(`🗑️ Room ${roomId} deleted (empty)`);
+          if (room.size === 0) {
+            rooms.delete(roomId);
+            console.log(`🗑️ Room ${roomId} deleted (empty)`);
+          }
+
+          socket.to(roomId).emit("user-left", { userId });
+          console.log(`🗑️ Removed ${user.userName} from room ${roomId}`);
+          break;
         }
       }
-
-      socket.to(roomId).emit("user-left", { userId });
-      socketToUser.delete(socket.id);
     }
-  });
-
-  // Heartbeat
-  socket.on("heartbeat", ({ userId }) => {
-    // Update last seen
-    console.log(`💓 Heartbeat from ${userId}`);
   });
 });
 
@@ -267,4 +230,7 @@ app.get("/api/room/:roomId", (req, res) => {
 const PORT = process.env.PORT || 5000;
 server.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
+  console.log(
+    `🌐 CORS origin: ${process.env.CORS_ORIGIN || "http://localhost:3000"}`
+  );
 });
